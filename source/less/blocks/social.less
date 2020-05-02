@@ -1,0 +1,30 @@
+.social {
+  &__link {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-right: 5px;
+    margin-bottom: 5px;
+    width: 46px;
+    height: 48px;
+    fill: #ffffff;
+    background-color: @block-bg-color;
+
+    &:hover {
+      background-color: #669ec0;
+    }
+
+    &:active {
+      fill: rgba(255, 255, 255, 0.3);
+      background-color: #5496bd;
+    }
+  }
+
+  &__list {
+    display: flex;
+    flex-wrap: wrap;
+    margin: auto;
+    padding: 0;
+    list-style: none;
+  }
+}

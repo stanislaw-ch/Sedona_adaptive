@@ -1,0 +1,47 @@
+.user-review {
+  padding: 0 20px;
+  margin: auto;
+  width: 280px;
+
+  &__description {
+    box-sizing: border-box;
+    padding: 20px 20px;
+    margin-bottom: 48px;
+    font-size: 18px;
+    font-weight: bold;
+    font-family: inherit;
+    background-color: #f2f2f2;
+    border: none;
+    max-width: 280px;
+    min-width: 280px;
+    min-height: 160px;
+  }
+
+  &__description::placeholder {
+    color: #000000;
+    font-family: inherit;
+  }
+}
+
+@media (min-width: @tablet-width) {
+  .user-review {
+    margin-top: 41px;
+    padding: 0;
+    width: auto;
+
+    &__description {
+      max-width: 648px;
+      min-width: 648px;
+      margin-bottom: 55px;
+    }
+  }
+}
+
+@media (min-width: @desktop-width) {
+  .user-review {
+    &__description {
+      max-width: 960px;
+      min-width: 960px;
+    }
+  }
+}

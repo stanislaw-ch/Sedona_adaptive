@@ -1,0 +1,38 @@
+.location {
+  background-color: #ffffff;
+
+  &__map {
+    position: absolute;
+    display: block;
+    width: 100%;
+    height: 320px;
+    z-index: 2;
+  }
+
+  &__map-static {
+    display: block;
+    width: 100%;
+    height: 320px;
+  }
+
+  &__map-marker {
+    position: absolute;
+    bottom: 50%;
+    right: 50%;
+    margin-bottom: -16px;
+    margin-right: -13px;
+  }
+
+  &__wrapper {
+    position: relative;
+  }
+}
+
+@media (min-width: @tablet-width) {
+  .location {
+    &__map,
+    &__map-static {
+      height: 350px;
+    }
+  }
+}

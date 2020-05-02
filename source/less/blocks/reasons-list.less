@@ -1,0 +1,147 @@
+.reasons-list {
+  background-color: #eeeeee;
+
+  &__description {
+    margin: auto;
+    line-height: 21px;
+    width: 250px;
+  }
+
+  &__description br {
+    display: none;
+  }
+
+  &__item {
+    padding-bottom: 28px;
+    border-bottom: 1px solid #d6d6d6;
+  }
+
+  &__item:last-of-type {
+    border: none;
+  }
+
+  &__list {
+    text-align: center;
+    margin: 0;
+    padding: 30px 20px 0 20px;
+    list-style: none;
+  }
+
+  &__subtitle {
+    position: relative;
+    margin: 13px 0 18px 0;
+  }
+
+  &__subtitle::before,
+  &__subtitle::after {
+    content: "";
+    position: absolute;
+    width: 9px;
+    height: 1px;
+    top: 8px;
+    background-color: #000000;
+  }
+
+  &__subtitle::before {
+    left: 115px;
+  }
+
+  &__subtitle::after {
+    right: 115px;
+  }
+
+  &__title {
+    margin: 30px 0 0 0;
+    font-size: @font-size-title;
+    font-weight: bold;
+  }
+
+  &__title br {
+    display: none;
+  }
+
+  &__item:first-of-type &__title {
+    margin-top: 0;
+  }
+}
+
+@media (min-width: @tablet-width) {
+  .reasons-list {
+    &__description {
+      width: 159px;
+    }
+
+    &__description br {
+      display: inline;
+    }
+
+    &__item {
+      padding: 47px 0 44px 0;
+      border: none;
+    }
+
+    &__list {
+      display: flex;
+      align-items: flex-start;
+      justify-content: space-around;
+      padding: 0;
+    }
+
+    &__subtitle {
+      margin-top: 14px;
+      margin-bottom: 24px;
+    }
+
+    &__subtitle::before {
+      left: 96px;
+    }
+
+    &__subtitle::after {
+      right: 96px;
+    }
+
+    &__title {
+      width: 160px;
+      margin: auto;
+      font-size: 21px;
+    }
+
+    &__title br {
+      display: inline;
+    }
+
+    &__item:first-of-type &__title {
+      margin-top: 0;
+    }
+  }
+}
+
+@media (min-width: @desktop-width) {
+  .reasons-list {
+    &__description {
+      width: 300px;
+    }
+
+    &__description br {
+      display: none;
+    }
+
+    &__item {
+      padding: 45px 0 65px 0;
+      border: none;
+    }
+
+    &__subtitle {
+      margin-top: 15px;
+      margin-bottom: 25px;
+    }
+
+    &__subtitle::before {
+      left: 125px;
+    }
+
+    &__subtitle::after {
+      right: 125px;
+    }
+  }
+}
