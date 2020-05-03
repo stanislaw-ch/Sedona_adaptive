@@ -21,6 +21,7 @@
     margin-bottom: 0;
     margin-right: 0;
     padding: 0;
+
     border: none;
     border-bottom: 1px solid #e5e5e5;
   }
@@ -30,20 +31,23 @@
   }
 
   &__subtitle {
-    margin: 0;
-    text-align: center;
-    line-height: 24px;
     width: 280px;
+    margin: 0;
+
+    line-height: 24px;
+    text-align: center;
   }
 
   &__title {
+    width: 280px;
     margin: auto;
     margin-bottom: 20px;
     padding: 0;
-    text-align: center;
+
     font-size: @font-size-title;
     font-weight: bold;
     line-height: 26px;
+    text-align: center;
     color: #000000;
 
     &--header {
@@ -64,6 +68,7 @@
     flex-direction: column;
     align-items: center;
     padding: 38px 20px 17px 20px;
+
     border-bottom: 1px solid #e5e5e5;
   }
 
@@ -88,36 +93,40 @@
 
     &__legend {
       display: block;
-      text-transform: uppercase;
+
       font-size: 14px;
+      text-transform: uppercase;
     }
 
     &__form {
       display: flex;
       flex-wrap: wrap;
+      justify-content: center;
       padding: 0 60px;
     }
 
     &__item {
       margin-top: 55px;
+
       border: none;
 
       &--user-name {
         box-sizing: border-box;
         width: 324px;
-        order: 2;
         padding-left: 55px;
+        order: 2;
       }
 
       &--user-contacts {
         width: 100%;
-        order: 3;
         margin-top: 68px;
         margin-bottom: 50px;
+        order: 3;
       }
 
       &--user-impressions {
         position: relative;
+
         box-sizing: border-box;
         width: 324px;
         order: 1;
@@ -125,23 +134,25 @@
         &::after {
           content: "";
           position: absolute;
-          width: 1px;
-          height: 100%;
           top: 0;
           right: 0;
+
+          width: 1px;
+          height: 100%;
+
           background-color: #e5e5e5;
         }
       }
 
       &--user-activity {
         width: 465px;
-        order: 4;
         margin: auto;
         margin-bottom: 30px;
+        order: 4;
       }
 
       &--user-review {
-        width: 100%;
+        width: 648px;
         order: 5;
       }
     }
@@ -155,24 +166,28 @@
     }
 
     &__title {
+      width: auto;
+
       font-size: 21px;
 
       &--header {
-        font-size: 30px;
         margin-bottom: 30px;
+
+        font-size: 30px;
       }
 
       &--user-impressions {
-        text-align: left;
         margin-left: 0;
-
         margin-bottom: 58px;
+
+        text-align: left;
       }
 
       &--user-name {
-        text-align: left;
         margin-left: 0;
         margin-bottom: 58px;
+
+        text-align: left;
       }
 
       &--user-contacts,
@@ -184,8 +199,10 @@
         &::before {
           content: "";
           position: absolute;
+
           width: 125px;
           height: 1px;
+
           background-color: #e5e5e5;
         }
       }
@@ -243,16 +260,17 @@
 
     &__wrapper {
       padding-top: 75px;
+
       border: none;
     }
 
     &__footer-wrapper {
-      order: 6;
-      width: 100%;
       display: flex;
       justify-content: space-between;
       align-items: center;
+      width: 648px;
       margin: 0 0 60px 0;
+      order: 6;
     }
   }
 }
@@ -290,6 +308,10 @@
         margin-top: 70px;
         margin-bottom: 5px;
       }
+
+      &--user-review {
+        width: 100%;
+      }
     }
 
     &__title {
@@ -303,9 +325,10 @@
       }
 
       &--user-name {
-        text-align: left;
         margin-left: 0;
         margin-bottom: 56px;
+
+        text-align: left;
       }
 
       &--user-contacts,
@@ -359,6 +382,7 @@
     }
 
     &__footer-wrapper {
+      width: 100%;
       margin: 0 0 65px 0;
     }
   }

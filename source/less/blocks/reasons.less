@@ -1,11 +1,13 @@
 .reasons {
   display: flex;
   flex-direction: column;
-  // justify-content: center;
+
+  background-color: #f2f2f2;
 
   &__description {
     margin-top: 17px;
     margin-bottom: 0;
+
     line-height: 21px;
   }
 
@@ -15,13 +17,13 @@
 
   &__picture {
     display: block;
-    width: 100%;
     height: 260px;
-    background-color: #daeaf2;
+    margin: 0 auto;
   }
 
   &__subtitle {
     position: relative;
+
     margin: 0;
   }
 
@@ -29,9 +31,11 @@
   &__subtitle::after {
     content: "";
     position: absolute;
+    top: 8px;
+
     width: 9px;
     height: 1px;
-    top: 8px;
+
     background-color: #ffffff;
   }
 
@@ -46,6 +50,7 @@
   &__title {
     margin-top: 0;
     margin-bottom: 14px;
+
     font-size: @font-size-title;
     font-weight: bold;
   }
@@ -55,12 +60,16 @@
   }
 
   &__wrapper {
+    width: 280px;
+    margin: 0 auto;
     padding-top: 42px;
     padding-bottom: 40px;
     padding-left: 20px;
     padding-right: 20px;
+
     text-align: center;
     color: #ffffff;
+
     background-color: @block-bg-color;
 
     &--mask {
@@ -76,16 +85,18 @@
   padding-top: 60px;
 }
 
-@media (min-width: @tablet-width) {
+@media (min-width: 535px) {
   .reasons {
     flex-direction: row;
     justify-content: flex-start;
-    background-color: #daeaf2;
+    background-color: @block-bg-color;
 
     &__title {
-      font-size: 21px;
-      line-height: 26px;
       margin-bottom: 13px;
+
+      font-size: 21px;
+
+      line-height: 26px;
     }
 
     &__title br {
@@ -101,12 +112,13 @@
     }
 
     &__picture {
+      width: 100%;
       height: 256px;
     }
 
     &__description {
-      margin-top: 25px;
       width: 100%;
+      margin-top: 25px;
     }
 
     &__description br {
@@ -117,12 +129,13 @@
       display: flex;
       flex-direction: column;
       justify-content: flex-start;
+      box-sizing: border-box;
+      width: 256px;
+      min-height: 256px;
+      margin: 0 auto;
       padding-left: 40px;
       padding-right: 40px;
       padding-top: 44px;
-      width: 256px;
-      min-height: 256px;
-      box-sizing: border-box;
 
       &--mask {
         background-image: none;
@@ -151,7 +164,7 @@
   }
 }
 
-@media (min-width: @desktop-width) {
+@media (min-width: 850px) {
   .reasons {
     &__title {
       width: 200px;
@@ -164,11 +177,11 @@
     }
 
     &__subtitle::before {
-      left: 135px;
+      left: 115px;
     }
 
     &__subtitle::after {
-      right: 135px;
+      right: 115px;
     }
 
     &__description {
@@ -181,8 +194,8 @@
     }
 
     &__wrapper {
+      width: 360px;
       padding-top: 53px;
-      width: 400px;
     }
   }
 
@@ -198,3 +211,51 @@
     display: inline;
   }
 }
+
+// @media (min-width: @desktop-width) {
+//   .reasons {
+//     &__title {
+//       width: 200px;
+//       margin: 0 auto;
+//     }
+
+//     &__subtitle {
+//       margin-top: 12px;
+//       margin-bottom: 24px;
+//     }
+
+//     &__subtitle::before {
+//       left: 135px;
+//     }
+
+//     &__subtitle::after {
+//       right: 135px;
+//     }
+
+//     &__description {
+//       width: 280px;
+//       margin: 0 auto;
+//     }
+
+//     &__description br {
+//       display: inline;
+//     }
+
+//     // &__wrapper {
+//     //   padding-top: 53px;
+//     //   width: 400px;
+//     // }
+//   }
+
+//   // .reasons:first-of-type .reasons__wrapper {
+//   //   padding-top: 52px;
+//   // }
+
+//   .reasons:first-of-type br {
+//     display: none;
+//   }
+
+//   .reasons:nth-child(4) .reasons__description br {
+//     display: inline;
+//   }
+// }

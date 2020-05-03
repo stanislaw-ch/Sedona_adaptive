@@ -2,14 +2,16 @@
   background-color: #ffffff;
 
   &__author-name {
+    margin-bottom: 17px;
+
     font-style: normal;
     text-transform: none;
-    margin-bottom: 17px;
   }
 
   &__description {
-    font-weight: bold;
     margin-bottom: 7px;
+
+    font-weight: bold;
   }
 
   &__description-wrapper {
@@ -21,8 +23,9 @@
     display: flex;
     flex-direction: column;
     align-items: center;
-    border-top: 1px solid #e5e5e5;
     width: 100%;
+
+    border-top: 1px solid #e5e5e5;
   }
 
   &__item:last-of-type {
@@ -38,6 +41,7 @@
   &__item-wrapper {
     & picture {
       min-height: 280px;
+
       background-color: #000000;
     }
   }
@@ -47,6 +51,7 @@
     flex-direction: column;
     margin: 0 auto;
     padding: 0;
+
     list-style: none;
   }
 
@@ -55,36 +60,123 @@
     margin-top: 23px;
     margin-bottom: 19px;
     min-height: 280px;
+
     background-color: #daeaf2;
   }
 
   &__rating {
     position: relative;
-    font-weight: bold;
     margin-bottom: 20px;
     padding-left: 35px;
+
+    font-weight: bold;
   }
 
   &__subtitle {
-    line-height: 24px;
     margin: 30px 0 0 0;
     width: 100%;
+
+    line-height: 24px;
   }
 
   &__title {
+    margin: 0;
+
     font-size: @font-size-title;
     font-weight: bold;
     color: #000000;
-    margin: 0;
   }
 
   &__wrapper {
     display: flex;
     flex-direction: column;
     justify-content: flex-start;
-    align-items: center;
-    text-align: center;
+
+    width: 270px;
+    margin: 0 auto;
     padding: 40px 25px 27px 25px;
+    text-align: center;
+  }
+}
+
+@media (min-width: 500px) {
+  .photo {
+    &__wrapper {
+      width: 430px;
+      padding-top: 70px;
+      padding-bottom: 69px;
+    }
+  }
+}
+
+@media (min-width: 648px) {
+  .photo {
+    &__author-name {
+      margin-bottom: 0;
+    }
+
+    &__description {
+      margin-bottom: 8px;
+    }
+
+    &__description-wrapper {
+      display: flex;
+    }
+
+    &__item {
+      align-items: flex-start;
+      width: 324px;
+      padding: 0;
+
+      border: none;
+      background-color: #eaeaea;
+    }
+
+    &__item:last-of-type {
+      border: none;
+    }
+
+    &__item-description-wrapper {
+      display: flex;
+      flex-direction: row;
+      justify-content: space-between;
+      align-items: center;
+      width: auto;
+      padding: 20px 20px 20px 20px;
+    }
+
+    &__item-wrapper {
+      width: 100%;
+    }
+
+    &__list {
+      flex-direction: row;
+      flex-wrap: wrap;
+      justify-content: center;
+      width: 648px;
+    }
+
+    &__picture {
+      width: 100%;
+      min-height: 267px;
+      margin: 0;
+    }
+
+    &__rating {
+      margin-bottom: 0;
+    }
+
+    &__subtitle {
+      margin-top: 27px;
+    }
+
+    &__title {
+      font-size: 30px;
+    }
+  }
+
+  .photo__item:nth-child(1) .photo__item-description-wrapper {
+    padding: 20px 20px 20px 20px;
   }
 }
 
@@ -104,14 +196,15 @@
 
     &__item {
       align-items: flex-start;
-      padding: 0;
-      border: none;
       width: 324px;
+      padding: 0;
+
+      border: none;
       background-color: #eaeaea;
     }
 
     &__item:first-of-type {
-      width: 100%;
+      width: 648px;
     }
 
     &__item:last-of-type {
@@ -123,8 +216,8 @@
       flex-direction: row;
       justify-content: space-between;
       align-items: center;
-      padding: 20px 28px 20px 20px;
       width: auto;
+      padding: 20px 28px 20px 20px;
     }
 
     &__item-wrapper {
@@ -132,10 +225,8 @@
     }
 
     &__list {
-      flex-direction: row;
-      flex-wrap: wrap;
+      justify-content: flex-start;
       padding: 0 60px;
-      margin: 0;
     }
 
     &__picture {
@@ -149,17 +240,11 @@
     }
 
     &__subtitle {
-      width: 430px;
       margin-top: 27px;
     }
 
     &__title {
       font-size: 30px;
-    }
-
-    &__wrapper {
-      padding-top: 70px;
-      padding-bottom: 69px;
     }
   }
 
@@ -185,19 +270,27 @@
     &__item {
       position: relative;
       width: 400px;
+
       background-color: #daeaf2;
     }
 
-    &__item-description-wrapper {
-      margin-top: -82px;
-      background-color: rgba(0, 1, 1, 0.2);
-      position: absolute;
+    &__item:first-of-type {
       width: 100%;
+    }
+
+    &__item-description-wrapper {
+      position: absolute;
       bottom: 0;
+
       box-sizing: border-box;
+      width: 100%;
+      margin-top: -82px;
+
+      background-color: rgba(0, 1, 1, 0.2);
     }
 
     &__list {
+      width: auto;
       padding: 0;
     }
 

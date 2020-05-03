@@ -8,8 +8,10 @@
       position: absolute;
       top: -15px;
       left: -79px;
+
       width: 0;
       height: 0;
+
       border: 27px solid #f2f2f2;
       border-radius: 50%;
     }
@@ -27,8 +29,10 @@
       position: absolute;
       top: 2px;
       left: -62px;
+
       width: 0;
       height: 0;
+
       border: 10px solid #000000;
       border-radius: 50%;
     }
@@ -46,8 +50,10 @@
       position: absolute;
       top: -16px;
       left: -81px;
+
       width: 55px;
       height: 55px;
+
       background-color: #f2f2f2;
       border-radius: 5px;
     }
@@ -62,15 +68,18 @@
 
     &--checkbox:checked + label .filter-option__tick {
       content: "";
-      display: block;
       position: absolute;
-      cursor: pointer;
-      user-select: none;
-      width: 24px;
-      height: 16px;
       top: 3px;
       left: -64px;
+
+      display: block;
+      width: 24px;
+      height: 16px;
+
       fill: #000000;
+
+      cursor: pointer;
+      user-select: none;
     }
 
     &--checkbox:checked + label .filter-option__tick:active,
@@ -97,22 +106,25 @@
 
   &__label {
     position: relative;
+
     display: block;
-    cursor: pointer;
-    user-select: none;
     font-size: 18px;
     font-weight: bold;
     text-transform: none;
+
+    cursor: pointer;
+    user-select: none;
   }
 
   &__wrapper {
     display: flex;
     flex-direction: column;
     justify-content: space-between;
-    margin: auto;
     width: 280px;
-    list-style: none;
+    margin: auto;
     padding: 0;
+
+    list-style: none;
 
     &--user-impressions {
       height: 195px;
@@ -185,10 +197,10 @@
       }
 
       &--user-activity {
-        padding-top: 30px;
-        margin: 0;
         width: 100%;
         height: auto;
+        padding-top: 30px;
+        margin: 0;
       }
     }
   }

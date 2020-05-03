@@ -1,35 +1,37 @@
 .intro-secondary-page {
   &__header {
     display: flex;
-    background-size: 320px 27px, 768px 389px;
-    background-position: 50% 132px, 50% 100%;
-    background-repeat: no-repeat;
-    background-image: url("../img/bg-intro-triangle-mobile.svg"), url("../img/bg-back-mobile@1x.jpg");
-    background-color: #daeaf2;
     height: 158px;
 
+    background-size: 768px 57px, 768px 389px;
+    background-position: 50% 101px, 50% 100%;
+    background-repeat: no-repeat;
+    background-image: url("../img/bg-intro-triangle-tablet.svg"), url("../img/bg-back-tablet@1x.jpg");
+    background-color: #daeaf2;
+
     @media (min-resolution: @retina-dpi), (min-resolution: @retina-dppx) {
-      background-image: url("../img/bg-intro-triangle-mobile.svg"), url("../img/bg-back-mobile@2x.jpg");
+      background-image: url("../img/bg-intro-triangle-tablet.svg"), url("../img/bg-back-tablet@2x.jpg");
     }
   }
 
   &__logo {
+    margin: auto;
     padding-top: 50px;
     padding-bottom: 70px;
-    margin: auto;
   }
 }
 
-@media (min-width: @tablet-width) {
+@media (min-width: 500px) {
   .intro-secondary-page {
     &__header {
       height: 290px;
-      background-size: 768px 57px, 768px 518px;
-      background-position: 50% 234px, 50% 100%;
-      background-image: url("../img/bg-intro-triangle-tablet.svg"), url("../img/bg-back-tablet@1x.jpg");
+
+      background-size: 1200px 57px, 1200px 518px;
+      background-position: 50% 233px, 50% 100%;
+      background-image: url("../img/bg-intro-triangle-desktop.svg"), url("../img/bg-back-desktop@1x.jpg");
 
       @media (min-resolution: @retina-dpi), (min-resolution: @retina-dppx) {
-        background-image: url("../img/bg-intro-triangle-tablet.svg"), url("../img/bg-back-tablet@2x.jpg");
+        background-image: url("../img/bg-intro-triangle-desktop.svg"), url("../img/bg-back-desktop@2x.jpg");
       }
     }
 
@@ -44,6 +46,7 @@
   .intro-secondary-page {
     &__header {
       height: 300px;
+
       background-size: 1200px 57px, 1200px 518px;
       background-position: 50% 243px, 50% 100%;
       background-image: url("../img/bg-intro-triangle-desktop.svg"), url("../img/bg-back-desktop@1x.jpg");

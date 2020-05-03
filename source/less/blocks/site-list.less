@@ -1,6 +1,7 @@
 .site-list {
   &__item a {
     position: relative;
+
     display: block;
     padding-top: 20px;
     padding-bottom: 15px;
@@ -39,18 +40,20 @@
 }
 
 
-@media (min-width: @tablet-width) {
+@media (min-width: 650px) {
   .site-list {
     display: flex;
+    width: 38%;
 
     &__item {
-      width: 153px;
+      width: 50%;
     }
 
     &__item a {
-      border: none;
       font-size: 14px;
       color: #000000;
+
+      border: none;
       background-color: #ffffff;
     }
 
@@ -72,14 +75,6 @@
 
     &__item a:not([href]) {
       color: #766357;
-    }
-  }
-}
-
-@media (min-width: @desktop-width) {
-  .site-list {
-    &__item {
-      width: 239px;
     }
   }
 }

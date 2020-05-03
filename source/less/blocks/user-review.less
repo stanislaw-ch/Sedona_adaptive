@@ -7,14 +7,16 @@
     box-sizing: border-box;
     padding: 20px 20px;
     margin-bottom: 48px;
-    font-size: 18px;
-    font-weight: bold;
-    font-family: inherit;
-    background-color: #f2f2f2;
-    border: none;
     max-width: 280px;
     min-width: 280px;
     min-height: 160px;
+
+    font-size: 18px;
+    font-weight: bold;
+    font-family: inherit;
+
+    background-color: #f2f2f2;
+    border: none;
   }
 
   &__description::placeholder {
@@ -25,9 +27,9 @@
 
 @media (min-width: @tablet-width) {
   .user-review {
+    width: auto;
     margin-top: 41px;
     padding: 0;
-    width: auto;
 
     &__description {
       max-width: 648px;
