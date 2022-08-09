@@ -1,7 +1,7 @@
 # Sedona
 Internet site for a tourist town in Arizona
 
-Website: stanislaw-ch.github.io/sedona/build/index.html
+Website: https://stanislaw-ch.github.io/Sedona/build/index.html
 
 ## Overview
 Study project
